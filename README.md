@@ -25,7 +25,7 @@ Extension Chrome professionnelle qui permet d'extraire facilement et automatique
 ## 🚀 Installation
 
 ### Méthode 1 : Installation depuis GitHub
-1. Clonez ce repository : `git clone https://github.com/elgnani/chrome-serp-extractor.git`
+1. Clonez ce repository : `git clone https://github.com/lkmeldv/chrome-serp-extractor.git`
 2. Ouvrez Chrome et naviguez vers `chrome://extensions/`
 3. Activez le "Mode développeur" dans le coin supérieur droit
 4. Cliquez sur "Charger l'extension non empaquetée"
@@ -121,8 +121,6 @@ L'extension demande uniquement :
 ## 👨‍💻 Auteur
 
 **EL GNANI Mohamed**
-- Développeur Full-Stack spécialisé en outils SEO et web scraping
-- Expert en extensions Chrome et automatisation web
 
 ## 📄 Licence
 
