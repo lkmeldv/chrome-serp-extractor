@@ -133,14 +133,278 @@
       font-size: 12px;
       margin-top: 10px;
     }
+    
+    .mode-toggle {
+      margin-bottom: 15px;
+      background: white;
+      padding: 15px;
+      border-radius: 8px;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+    }
+    
+    .toggle-container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 10px;
+    }
+    
+    .toggle-label {
+      font-size: 14px;
+      font-weight: 500;
+      color: #333;
+    }
+    
+    .switch {
+      position: relative;
+      display: inline-block;
+      width: 50px;
+      height: 24px;
+    }
+    
+    .switch input {
+      opacity: 0;
+      width: 0;
+      height: 0;
+    }
+    
+    .slider {
+      position: absolute;
+      cursor: pointer;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: #ccc;
+      transition: .4s;
+      border-radius: 24px;
+    }
+    
+    .slider:before {
+      position: absolute;
+      content: "";
+      height: 18px;
+      width: 18px;
+      left: 3px;
+      bottom: 3px;
+      background-color: white;
+      transition: .4s;
+      border-radius: 50%;
+    }
+    
+    input:checked + .slider {
+      background-color: #4285f4;
+    }
+    
+    input:checked + .slider:before {
+      transform: translateX(26px);
+    }
+    
+    .mode-description {
+      font-size: 12px;
+      color: #666;
+      margin-top: 5px;
+    }
+    
+    .url-filters {
+      margin-bottom: 15px;
+      background: white;
+      padding: 15px;
+      border-radius: 8px;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+    }
+    
+    .filter-section {
+      margin-bottom: 15px;
+    }
+    
+    .filter-section h4 {
+      margin: 0 0 10px 0;
+      font-size: 13px;
+      color: #333;
+      font-weight: 500;
+    }
+    
+    .domain-filter {
+      display: flex;
+      gap: 5px;
+      align-items: center;
+    }
+    
+    .domain-filter input[type="text"] {
+      flex: 1;
+      padding: 6px 8px;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+      font-size: 12px;
+    }
+    
+    .csv-btn {
+      background-color: #ff9800;
+      color: white;
+    }
+    
+    .csv-btn:hover {
+      background-color: #f57c00;
+    }
+    
+    .seo-highlight-section {
+      margin-bottom: 15px;
+      background: white;
+      padding: 15px;
+      border-radius: 8px;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+    }
+    
+    .seo-highlight-header {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 10px;
+    }
+    
+    .seo-highlight-header label {
+      display: flex;
+      align-items: center;
+      font-size: 14px;
+      font-weight: 500;
+      color: #333;
+      cursor: pointer;
+    }
+    
+    .settings-btn {
+      background: none;
+      border: none;
+      cursor: pointer;
+      padding: 4px;
+      border-radius: 4px;
+      color: #666;
+      font-size: 14px;
+      transition: all 0.2s ease;
+    }
+    
+    .settings-btn:hover {
+      background: #f0f0f0;
+      color: #333;
+    }
+    
+    .modal-overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0,0,0,0.5);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 1000;
+    }
+    
+    .settings-modal {
+      background: white;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+      width: 320px;
+      max-width: 90vw;
+    }
+    
+    .settings-modal h3 {
+      margin: 0 0 15px 0;
+      font-size: 16px;
+      color: #333;
+    }
+    
+    .setting-group {
+      margin-bottom: 15px;
+    }
+    
+    .setting-group label {
+      display: block;
+      margin-bottom: 5px;
+      font-size: 13px;
+      color: #555;
+      font-weight: 500;
+    }
+    
+    .input-range {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    
+    .input-range input {
+      width: 60px;
+      padding: 6px 8px;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+      font-size: 13px;
+    }
+    
+    .setting-group input[type="number"] {
+      width: 100px;
+      padding: 6px 8px;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+      font-size: 13px;
+    }
+    
+    .modal-buttons {
+      display: flex;
+      gap: 10px;
+      margin-top: 20px;
+    }
+    
+    .modal-btn {
+      flex: 1;
+      padding: 8px 16px;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 13px;
+      font-weight: 500;
+    }
+    
+    .modal-btn.save {
+      background: #4285f4;
+      color: white;
+    }
+    
+    .modal-btn.reset {
+      background: #f0f0f0;
+      color: #333;
+    }
+    
+    .modal-btn:hover.save {
+      background: #3367d6;
+    }
+    
+    .modal-btn:hover.reset {
+      background: #e0e0e0;
+    }
   </style>
 </head>
 <body>
   <div class="header">
-    <h1>🔍 SERP Extractor</h1>
+    <h1>🔍 Universal Extractor</h1>
   </div>
   
-  <div class="options">
+  <div class="mode-toggle">
+    <div class="toggle-container">
+      <span class="toggle-label">Mode d'extraction</span>
+      <label class="switch">
+        <input type="checkbox" id="modeToggle">
+        <span class="slider"></span>
+      </label>
+    </div>
+    <div class="mode-description" id="modeDescription">
+      Mode Google SERP : Extraire depuis les résultats de recherche
+    </div>
+  </div>
+  
+  <!-- Options pour Google SERP -->
+  <div class="options" id="serpOptions">
     <div class="option">
       <label>
         <input type="checkbox" id="extractUrls" checked>
@@ -161,10 +425,57 @@
     </div>
   </div>
   
+  <!-- Filtres pour mode Any Page -->
+  <div class="url-filters hidden" id="urlFilters">
+    <div class="filter-section">
+      <h4>🎯 Filtres de liens</h4>
+      <div class="option">
+        <label>
+          <input type="checkbox" id="externalOnly">
+          URLs externes uniquement
+        </label>
+      </div>
+      <div class="option">
+        <label>
+          <input type="checkbox" id="internalOnly">
+          URLs internes uniquement
+        </label>
+      </div>
+      <div class="option">
+        <label>
+          <input type="checkbox" id="excludeSocial" checked>
+          Exclure les réseaux sociaux
+        </label>
+      </div>
+    </div>
+    
+    <div class="filter-section">
+      <h4>🌐 Filtre par domaine</h4>
+      <div class="domain-filter">
+        <input type="text" id="domainFilter" placeholder="ex: example.com">
+      </div>
+    </div>
+  </div>
+  
+  <!-- Section SEO Highlighting -->
+  <div class="seo-highlight-section" id="seoHighlightSection">
+    <div class="seo-highlight-header">
+      <label>
+        <input type="checkbox" id="highlightSeoOpportunities">
+        Highlight SEO opportunities
+      </label>
+      <button class="settings-btn" id="seoSettingsBtn" title="SEO Settings">⚙️</button>
+    </div>
+    <div class="mode-description" style="font-size: 12px; color: #666;">
+      Highlight results matching your SEO criteria
+    </div>
+  </div>
+  
   <div class="buttons">
     <button id="extractBtn" class="primary-btn">📋 Extraire les données</button>
     <button id="copyBtn" class="secondary-btn hidden">📄 Copier résultats</button>
-    <button id="num100Btn" class="utility-btn">📈 Afficher 100 résultats</button>
+    <button id="exportCsvBtn" class="csv-btn hidden">📊 Exporter CSV</button>
+    <button id="num100Btn" class="utility-btn" style="display: none;">📈 Afficher 100 résultats</button>
   </div>
   
   <div id="results" class="results hidden">
@@ -174,6 +485,37 @@
   </div>
   
   <div id="message"></div>
+  
+  <!-- Modal SEO Settings -->
+  <div class="modal-overlay hidden" id="settingsModal">
+    <div class="settings-modal">
+      <h3>🎯 SEO Highlighting Settings</h3>
+      
+      <div class="setting-group">
+        <label>Referring Domains (RD) Range:</label>
+        <div class="input-range">
+          <input type="number" id="rd-min" placeholder="0" min="0">
+          <span>to</span>
+          <input type="number" id="rd-max" placeholder="50" min="0">
+        </div>
+      </div>
+      
+      <div class="setting-group">
+        <label>Keywords (KW) Minimum:</label>
+        <input type="number" id="kw-min" placeholder="1000" min="0">
+      </div>
+      
+      <div class="setting-group">
+        <label>Search Traffic (ST) Minimum:</label>
+        <input type="number" id="st-min" placeholder="1000" min="0">
+      </div>
+      
+      <div class="modal-buttons">
+        <button class="modal-btn save" id="saveSettings">Save</button>
+        <button class="modal-btn reset" id="resetSettings">Reset to defaults</button>
+      </div>
+    </div>
+  </div>
   
   <script src="popup.js"></script>
 </body>

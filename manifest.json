@@ -1,27 +1,17 @@
 {
   "manifest_version": 3,
-  "name": "SERP Extractor",
-  "version": "1.0",
-  "description": "Extraire les URLs, titres et meta descriptions de Google SERP",
+  "name": "Universal SERP & URL Extractor",
+  "version": "2.1",
+  "description": "Extraire les URLs depuis Google SERP et toutes les URLs depuis n'importe quelle page web",
   
   "permissions": [
     "activeTab",
     "storage"
   ],
   
-  "host_permissions": [
-    "https://www.google.com/*",
-    "https://google.com/*",
-    "https://*.google.com/*"
-  ],
-  
   "content_scripts": [
     {
-      "matches": [
-        "https://www.google.com/search*",
-        "https://google.com/search*",
-        "https://*.google.com/search*"
-      ],
+      "matches": ["<all_urls>"],
       "js": ["content.js"],
       "run_at": "document_end"
     }
@@ -29,6 +19,6 @@
   
   "action": {
     "default_popup": "popup.html",
-    "default_title": "SERP Extractor"
+    "default_title": "Universal Extractor"
   }
 }

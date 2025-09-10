@@ -1,26 +1,41 @@
-# 🔍 Extension Chrome SERP Extractor
+# 🔍 Universal SERP & URL Extractor
 
 ## 📋 Description
-Extension Chrome professionnelle qui permet d'extraire facilement et automatiquement les URLs, titres et meta descriptions des pages de résultats de recherche Google (SERP). Un outil indispensable pour les SEO, marketeurs digitaux et analystes web.
+Extension Chrome universelle 2-en-1 qui combine :
+1. **Extraction SERP Google** : URLs, titres et meta descriptions des résultats de recherche
+2. **Extraction universelle d'URLs** : Tous les liens présents sur n'importe quelle page web
+
+Un outil indispensable pour les SEO, marketeurs digitaux, analystes web et développeurs.
 
 ## ✨ Fonctionnalités Principales
 
-### 🎯 Extraction de Données SERP
+### 🔄 Double Mode d'Extraction
+- **Toggle intelligent** : Basculez entre mode "Google SERP" et "URLs universelles" 
+- **Interface adaptative** : L'interface change selon le mode sélectionné
+- **Détection automatique** : Suggestions de mode selon le site visité
+
+### 🎯 Mode Google SERP
 - **URLs complètes** : Extrait toutes les URLs des résultats de recherche organiques
 - **Titres de pages** : Récupère les titres H1/H3 de chaque résultat
 - **Meta descriptions** : Capture les descriptions/snippets affichés sous les titres
 - **Filtrage intelligent** : Exclut automatiquement les liens Google internes et publicités
+- **Mode 100 résultats** : Bouton pour passer de 10 à 100 résultats automatiquement
 
-### ⚙️ Options Configurables
-- **Sélection modulaire** : Choisissez exactement les données à extraire (URLs, titres, descriptions)
-- **Mode 100 résultats** : Bouton pour passer de 10 à 100 résultats sur Google automatiquement
-- **Format personnalisé** : Sortie structurée et lisible avec numérotation
+### 🌐 Mode Extraction Universelle
+- **Scan complet** : Analyse tous les liens `<a href="">` de la page courante
+- **Filtrage avancé** : 
+  - URLs externes uniquement
+  - URLs internes uniquement  
+  - Exclusion des réseaux sociaux (Facebook, Twitter, LinkedIn, etc.)
+  - Filtre par domaine spécifique
+- **Déduplication** : Suppression automatique des doublons
+- **Export CSV** : Téléchargement avec domaines et types (interne/externe)
 
 ### 🖥️ Interface Utilisateur
-- **Popup moderne** : Interface claire avec design Google Material
-- **Boutons intuitifs** : Actions clairement identifiées
-- **Messages informatifs** : Feedback en temps réel sur les opérations
-- **Copie automatique** : Résultats copiés dans le presse-papiers d'un clic
+- **Toggle moderne** : Switch fluide entre les deux modes
+- **Popup adaptatif** : Interface qui change selon le mode actif
+- **Filtres intelligents** : Checkboxes avec exclusion mutuelle
+- **Messages contextuels** : Feedback spécifique selon le mode utilisé
 
 ## 🚀 Installation
 
@@ -99,11 +114,21 @@ L'extension utilise des sélecteurs CSS robustes pour capturer les résultats Go
 ```
 
 ### Cas d'Usage
+
+#### Mode Google SERP
 - **Analyse SEO** : Étudier la concurrence sur des mots-clés ciblés
 - **Research** : Collecter des sources pour des études de marché
 - **Link Building** : Identifier des prospects de backlinks
 - **Content Marketing** : Analyser les titres et descriptions performants
 - **Veille concurrentielle** : Surveiller les positions des concurrents
+
+#### Mode Extraction Universelle
+- **Audit de liens** : Analyser la structure de liens d'un site
+- **Crawling préparatoire** : Lister toutes les URLs d'un domaine avant scraping
+- **Analyse de navigation** : Étudier les liens internes/externes d'une page
+- **Recherche de partenaires** : Identifier les liens sortants vers d'autres domaines
+- **SEO interne** : Mapper l'architecture de liens d'un site
+- **Veille technologique** : Extraire les liens depuis des pages de ressources
 
 ## 🛡️ Sécurité et Confidentialité
 
@@ -135,7 +160,15 @@ Les contributions sont les bienvenues ! N'hésitez pas à :
 
 ## 🔄 Changelog
 
-### Version 1.0 (Initial Release)
+### Version 2.0 (Universal Update) - NOUVELLE VERSION
+- 🔄 **Mode dual** : SERP Google + Extraction universelle d'URLs
+- 🌐 **Support toutes pages** : Fonctionne sur n'importe quel site web
+- 🎯 **Filtres avancés** : Interne/externe, exclusion réseaux sociaux, filtre par domaine
+- 📊 **Export CSV** : Téléchargement avec analyse interne/externe
+- 🔧 **Interface adaptative** : Toggle moderne entre les modes
+- ⚡ **Performance optimisée** : Traitement rapide même sur pages avec 100+ liens
+
+### Version 1.0 (Initial Release)  
 - Extraction complète des données SERP Google
 - Interface popup moderne et intuitive
 - Support du mode 100 résultats
